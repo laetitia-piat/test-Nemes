@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test NEMES 1</title>
+  </head>
+  <body>
+    <h1>Test du Reverse String</h1>
+    <p><strong>Avant :</strong> <span id="Before"></span></p>
+    <p><strong>Après :</strong> <span id="result"></span></p>
+
+    <script>
+      const string = "Hello, World!";
+      const reverseString = (str) => {
+        let reversed = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+          reversed += str[i];
+        }
+        return reversed;
+      };
+
+      document.getElementById("Before").textContent = string;
+      document.getElementById("result").textContent = reverseString(string);
+    </script>
+  </body>
+</html>
